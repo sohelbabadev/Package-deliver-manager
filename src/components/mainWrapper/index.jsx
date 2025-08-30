@@ -16,7 +16,7 @@ function MainWrapper() {
  } = usePackageContext();
  
  return (
-    <div className='w-full h-full bg-white px-30 py-15 gap-6 flex flex-col overflow-hidden'>   
+    <div className='w-full h-full bg-white md:px-30 md:py-15 p-10 gap-6 flex flex-col overflow-hidden'>   
         {(open && popupType == POPUP_TYPE.ADD_NEW) && (
             <Popup
                 type={POPUP_TYPE.ADD_NEW}

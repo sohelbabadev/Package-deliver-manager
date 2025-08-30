@@ -57,7 +57,7 @@ export default function CreatePackageForm({onClose}) {
         <Typography fontWeight={'bold'} variant='h5' className='text-center font-bold text-2xl'>Add New Package</Typography>
       </div>
       <div className='w-full flex flex-col justify-center gap-4'>
-          <div className='w-full flex flex-row gap-3 mt-3'>
+          <div className='w-full flex flex-col md:flex-row gap-3 mt-3'>
              <TextField 
               label='Sender Name' 
               tabIndex={1}
@@ -79,7 +79,7 @@ export default function CreatePackageForm({onClose}) {
               onChange={handleChange}
             />
           </div>
-          <div className='w-full flex flex-row gap-3'>
+          <div className='w-full flex flex-col md:flex-row gap-3'>
              <TextField 
              fullWidth
               label='Source Location' 
